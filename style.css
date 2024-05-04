@@ -1,0 +1,140 @@
+body{
+    background-color: #152228;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #162B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header .logo{
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+
+header .logo img{
+    width: 80px;
+    height: 80px;
+}
+
+header .logo form{ 
+    padding-left: 50px;
+}
+
+.logo form img{
+    width: 20px;
+    height: 20px;
+}
+
+header .logo input{
+    width: 150px;
+    border: none;
+    background-color: rgb(50, 48, 48);
+}
+
+header nav a{
+    font-size: 18px;
+    padding: 0 30px;
+    font-size: 25px;
+}
+
+header nav a:hover{
+    color: #4786a1;
+    transition: ease-in-out 0.6s;
+
+}
+.container h2{
+    margin: 10px 0 0 10px;
+}
+
+.container .filmeDestaque{
+margin-top: 15px;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 0.92, 8.18) 0%,
+    rgb(86.06, 29.4, 54.83) 24%,
+    rgb(229, 190, 57) 44%,
+    rgb(229.5, 190.3, 57.37) 55.5%,
+    rgb(86, 29, 55) 75.5%,
+    rgb(17, 1, 8) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filmeDestaque .classificacao{
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.filmeDestaque .classificacao img{
+    width: 20px;
+    height: 20px;
+}
+
+.container .sinopse{
+    width: 25%;
+    line-height: 30px;
+}
+
+.container .sinopse p{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.filmeDestaque .imagemDestaque img{
+    margin-right: 500px;
+    width: 600px;
+    height: 500px;
+}
+
+.botoes{
+    display: flex;
+    margin: 10px 0;
+    gap: 60px;
+}
+.botoes button{
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botoes button:first-child{
+    background-color: #0d4864;
+}
+.botoes button:last-child{
+    background-color: transparent;
+    border: solid 2px rgb(67, 144, 189);
+}
+
+.container .catalogo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.catalogo .filme{
+    display: flex;
+    flex-flow: column;
+}
+
+.filme img{
+    width: 300px;
+    height: 400px;
+}
+
+.filme span{
+    font-size: 20px;
+}
+
