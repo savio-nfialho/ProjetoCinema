@@ -49,6 +49,7 @@ header nav a:hover{
     transition: ease-in-out 0.6s;
 
 }
+
 .container h2{
     margin: 10px 0 0 10px;
 }
@@ -127,7 +128,7 @@ margin-top: 15px;
     padding: 20px;
 }
 
-.catalogo .filme{
+.catalogo .filme a{
     display: flex;
     flex-flow: column;
 }
@@ -141,36 +142,256 @@ margin-top: 15px;
     font-size: 20px;
 }
 
-/* PROGRAMACAO.HTML */
+/* PROGRAMACAO */
 .container h1{
-    padding: 0 10px;
+    margin: 20px 10px;
 }
 .container .filmesVindouros{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 35px;
     padding: 0 10px;
 }
 
 .container .filmesVindouros .filme{
     display: flex;
     flex-flow: column;
-    gap: 5px;
+    gap: 15px;
+}
+
+.container .filmesVindouros .filme img{
+    width: 400px;
+    height: 400px;
 }
 
 #destacado{
     margin: 50px 0 10px 10px;
 }
 
+#botaoCentralizado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoCentralizado button{
+    background-color: #0d4864;
+    margin: 0 0 20px 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+#botaoCentralizado button:hover{
+    background-color: #77bbdd;
+    transition: 0.2s;
+}
+
 .container .filmesDestacados{
     display: flex;
     padding: 0 10px;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
 }
 
 .container .filmesDestacados .imagem-texto{
     display: flex;
-    width: 500px;
+    width: 630px;
     gap: 15px;
+}
+
+/* VENDAS ONLINE */
+
+.venda-destaque{
+    display: flex;
+    margin: 0 20px;
+}
+
+.venda-destaque img{
+    width: 500px;
+    height: 500px;
+}
+
+.venda-classificacao-duracao{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.venda-sinopse{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 0 0 0 20px;
+    width: 700px;
+    line-height: 35px;
+}
+
+.venda-sinopse h2{
+    font-size: 40px;
+}
+.venda-sinopse p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.venda-classificacao-duracao img{
+    width: 15px;
+    height: 15px;
+}
+
+.venda-classificacao-duracao span:last-child{
+    color: gray;
+}
+
+#h3sessao{
+    margin: 20px 0 0 20px;
+}
+.sessoes-dias{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 20px;
+    background-color: white;
+    color: black;
+    width: 1200px;
+}
+
+.sessoes-dias div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.sessoes-dias span, strong{
+    color: black;
+}
+
+.modalidades{
+    margin-top: 5px;
+    margin-left: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.modalidades button{
+    color: white;
+    background-color: transparent;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid #284e5f;
+}
+
+.modalidades button:first-child{
+   font-weight: bold;
+}
+
+.local-horario{
+    background-color: rgb(48, 18, 67);
+    margin: 20px 0 0 20px;
+    width: 1200px;
+}
+.local{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-bottom: 2px solid gray;
+}
+
+.local img{
+    width: 25px;
+    height: 25px;
+}
+
+.local .endereco{
+    margin: 10px;
+    color: gray;
+}
+
+.endereco span{
+    color: gray;
+}
+
+.assento-preco{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+
+.assento-preco div{
+    display: flex;
+    align-self: center;
+}
+
+#botao-dublado{
+    margin: 10px 0 0 20px;
+    color: white;
+    background-color: #284e5f;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.botoes-horario {
+ padding-bottom: 20px;
+}
+.botoes-horario button {
+    margin: 10px 0 0 20px;
+    color: white;
+    background-color: transparent;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid #284e5f;
+}
+
+.botoes-horario button strong{
+    color: white;
+}
+
+/* ASSENTOS */
+
+.assento-container {
+    margin: 20px;
+    border: 1px solid #43367b;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.assento-container h3 {
+    padding: 20px;
+}
+
+.fileira {
+    display: flex;
+    flex-flow: column;
+}
+
+.fileira .fileira-1,
+.fileira .fileira-2 {
+    display: flex;
+    padding: 20px;
+    gap: 5px;
+}
+
+.fileira .fileira-1 form,
+.fileira .fileira-2 form {
+    display: flex;
+    padding: 20px;
+    gap: 5px;
+}
+
+#confirmar-assento {
+    margin: 10px 0 0 20px;
+    color: white;
+    background-color: #284e5f;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
 }

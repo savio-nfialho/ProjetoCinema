@@ -1,0 +1,251 @@
+body{
+    background-color: #152228;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #162B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header .logo{
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+
+header .logo img{
+    width: 80px;
+    height: 80px;
+}
+
+header .logo form{ 
+    padding-left: 50px;
+}
+
+.logo form img{
+    width: 20px;
+    height: 20px;
+}
+
+header .logo input{
+    width: 150px;
+    border: none;
+    background-color: rgb(50, 48, 48);
+}
+
+header nav a{
+    font-size: 18px;
+    padding: 0 30px;
+    font-size: 25px;
+}
+
+header nav a:hover{
+    color: #4786a1;
+    transition: ease-in-out 0.6s;
+
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.quadrado{
+    background-color: #162B35;
+    width:800px;
+    height: 800px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.quadrado input, .quadrado textarea{
+    color: black;
+}
+.redes{
+    font-size: 20Px;
+    color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}   
+
+#insta i{
+    color: #FB3997;
+}
+
+#zap i{
+    color: #2DBC5D;
+}
+
+#face i{
+    color: #0986FF;
+}
+
+#you i{
+    color: #fa3c3c;
+}
+
+
+.redediv{
+    background-color: #1e4558;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 40px;
+
+}
+.conteiner .h2{    
+    display:flex;
+    justify-content: center;
+
+    
+}
+.redelogo{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+.texto-redes{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+
+}
+form label{
+    color:#f5f5f5;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+section h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom:20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border:0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background:transparent;
+    border:2px solid #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    color:#f5f5f5
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #1e4558;
+    border-radius: 16px;
+}
+
+/*Redes Sociais*/
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;  
+    gap:80px;
+}
+ul li{
+    width: 80px;
+    height: 80px;
+
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #0000004d;
+    border-radius: 50px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    position:relative;
+    transition: .3s;
+    
+}
+
+ul li:hover{
+    width: 300px;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .icon{
+    color:#4786a1;
+    font-size:1.8em;
+    transform: .2s;
+}
+
+ul li .text{
+    color: #fff;
+    font-size:22px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+    font-weight: bold;
+}
+ul li:hover .text{
+    transform: scale(1);
+}
+ul li:hover .icon{
+    transform: scale(0);
+}   
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 50px;
+}
+ul li:hover::before{
+    opacity: 1;
+}
