@@ -41,7 +41,7 @@ header .logo input{
 header nav a{
     font-size: 18px;
     padding: 0 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header nav a:hover{
@@ -57,12 +57,12 @@ header nav a:hover{
 margin-top: 15px;
   background: linear-gradient(
     90deg,
-    rgb(17, 0.92, 8.18) 0%,
-    rgb(86.06, 29.4, 54.83) 24%,
-    rgb(229, 190, 57) 44%,
-    rgb(229.5, 190.3, 57.37) 55.5%,
-    rgb(86, 29, 55) 75.5%,
-    rgb(17, 1, 8) 100%
+    rgb(0, 0, 0) 0%,
+    rgb(85, 83, 84) 24%,
+    rgb(171, 171, 169) 44%,
+    rgb(63, 63, 63) 55.5%,
+    rgb(85, 83, 84)  75.5%,
+    rgb(0, 0, 0) 100%
   );
   display: flex;
   align-items: center;
@@ -84,11 +84,14 @@ margin-top: 15px;
     width: 25%;
     line-height: 30px;
 }
-
+.container .sinopse h1{
+    color: rgb(186, 43, 43);
+}
 .container .sinopse p{
     width: 300px;
     font-size: 20px;
     font-weight: 100;
+    
 }
 
 .filmeDestaque .imagemDestaque img{
@@ -138,3 +141,36 @@ margin-top: 15px;
     font-size: 20px;
 }
 
+/* PROGRAMACAO.HTML */
+.container h1{
+    padding: 0 10px;
+}
+.container .filmesVindouros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.container .filmesVindouros .filme{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+#destacado{
+    margin: 50px 0 10px 10px;
+}
+
+.container .filmesDestacados{
+    display: flex;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.container .filmesDestacados .imagem-texto{
+    display: flex;
+    width: 500px;
+    gap: 15px;
+}
